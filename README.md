@@ -5,6 +5,7 @@ Instructions to run the application
  +	--> Open the index.html file in latest web browser
  
 References
- + -->  Udacity courses: Javascript testing Course/ Project feed reader testing.
+ + -->  Udacity courses: Javascript testing Course / Project feed reader testing.
+ + --> FeedReader Testing Project Rubric.
  + --> Project Assets link: https://github.com/udacity/frontend-nanodegree-feedreader.
  + --> Jasmine framework: https://jasmine.github.io/.
