@@ -6,7 +6,7 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-        it('URL defined', function() { //this test checks if the url of allFeeds are defined or not.
+        it('has the URL defined', function() { //this test checks if the url of allFeeds are defined or not.
             for (var i = 0; i < allFeeds.length; i++) {
                 var url = allFeeds[i].url;
                 expect(url).toBeDefined(); //checking url is defined or not
@@ -14,7 +14,7 @@ $(function() {
             }
 
         });
-        it('name defined', function() { //this test checks if the names of allFeeds are defined or not.
+        it('has the name defined', function() { //this test checks if the names of allFeeds are defined or not.
             for (var i = 0; i < allFeeds.length; i++) {
                 var name = allFeeds[i].name;
                 expect(name).toBeDefined(); //checking url is defined or not
@@ -26,10 +26,10 @@ $(function() {
 
     describe('The menu', function() { //this suite The menu checks the Menu's functions
         var menuDefault = $('body').hasClass('menu-hidden'); //checking if body of html has the class menu-hidden
-        it('Menu hidden by default', function() { //this test checks if the menu is hidden by default.
+        it('is hidden by default', function() { //this test checks if the menu is hidden by default.
             expect(menuDefault).toBe(true); //expecting the Var menuDefault to be true.
         });
-        it('Visibility of Menu', function() { //this test checks the visibilty of the menu when clicking the menu icon
+        it('is Visible', function() { //this test checks the visibilty of the menu when clicking the menu icon
             $('.menu-icon-link').click(); //when clicking the menu-icon for first time
             expect($('body').hasClass('menu-hidden')).toBe(false);
             //the menu-hidden class should not be there when clicking for first time
@@ -43,7 +43,7 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, done);
         });
-        it(' the Load feed complete work', function() { //this test makes sure the load feed completes its work
+        it('can Load feed completely', function() { //this test makes sure the load feed completes its work
             expect($('.feed .entry')[0]).toBeDefined();
         });
     });
@@ -60,7 +60,7 @@ $(function() {
                 });
             });
         });
-        it('has the new newsfeed loaded', function() { //this test makes sure the new newsfeed is loaded
+        it('is loaded', function() { //this test makes sure the new newsfeed is loaded
             expect(feed1).not.toBe(feed2); //making sure the first feed is not equal to second feed
         });
     });
