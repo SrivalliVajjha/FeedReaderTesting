@@ -44,7 +44,7 @@ $(function() {
             loadFeed(0, done);
         });
         it(' the Load feed complete work', function() { //this test makes sure the load feed completes its work
-            expect($('.entry')[0]).toBeDefined();
+            expect($('.feed .entry')[0]).toBeDefined();
         });
     });
 
@@ -53,7 +53,6 @@ $(function() {
         beforeEach(function(done) { //this makes sure the feed is loaded before each test
             loadFeed(0, function() { //loading of first feed
                 feed1 = $('.feed').html();
-                done();
 
                 loadFeed(1, function() { //loading the second feed
                     feed2 = $('.feed').html();
